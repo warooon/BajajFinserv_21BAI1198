@@ -26,7 +26,7 @@ function App() {
       const jsonParsed = JSON.parse(jsonInput);
 
       // Call the backend API
-      const res = await axios.post('http://localhost:3000/bfhl', jsonParsed);
+      const res = await axios.post('https://bajajfinserv-backend-8dn6.onrender.com/bhfl', jsonParsed);
 
       if (res.status === 200) {
         setResponse(res.data);
